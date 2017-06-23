@@ -10,3 +10,14 @@ creating default configuration for other community modules.
 A full description of ModuleSync can be found in [ModuleSync's
 README](https://github.com/puppetlabs/modulesync). This README describes how
 the templates are rendered in the Puppet Labs configuration.
+
+## Running msync
+
+To distribute configurations from `moduleroot` to all modules, run:
+
+```
+msync update -m "Some commit description"
+```
+
+Modules will get cloned to `modules/` directory, files will be synced and
+changes commited with the aforementioned comment.
