@@ -13,10 +13,22 @@ the templates are rendered in the Puppet Labs configuration.
 
 ## Running msync
 
+To check what would `msync` do, run:
+
+```
+msync update --noop
+```
+
 To distribute configurations from `moduleroot` to all modules, run:
 
 ```
 msync update -m "Some commit description"
+```
+
+To update configuration on a specific module, run:
+
+```
+msync update --filter=\^php$ 
 ```
 
 Modules will get cloned to `modules/` directory, files will be synced and
