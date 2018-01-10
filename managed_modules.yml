@@ -1,5 +1,5 @@
 ---
-#- activemq
+- activemq
 - admintools
 - amazon
 - apcupsd
@@ -55,13 +55,13 @@
 - nfs
 - nfsen
 - nginx
-- nodejs
 - noip2
 - ocsinventory
 - ossec
 - ossim
 - percona
 - perl
+- php
 - phpmyadmin
 - plymouth
 - postfix
